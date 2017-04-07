@@ -1,0 +1,13 @@
+{% if title == undefined %}
+	{% assign title = page.title %}
+{% endif %}
+
+<h1>{{ title }}</h1>
+
+{% include sequence-links.html %}
+
+<div class="rainshower-page-content rainshower-chapter-content">
+	{{ content }}
+</div>
+
+{% include sequence-links.html %}

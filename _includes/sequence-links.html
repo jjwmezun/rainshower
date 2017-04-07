@@ -1,0 +1,14 @@
+{% if next_url == undefined %}
+	{% assign next_url = page.next.url %}
+{% endif %}
+
+<nav class="rainshower-sequence-links">
+	<ul>
+		{% if page.previous.url %}
+			<li><a href="{{ page.previous.url }}">&larr; Previous</a></li>
+		{% endif %}
+		{% if next_url %}
+			<li><a href="{{ next_url }}">Next &rarr;</a></li>
+		{% endif %}
+	</ul>
+</nav>

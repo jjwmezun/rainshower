@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% assign post = site.posts.last %}
+{% assign content = post.content %}
+{% assign title = post.title %}
+{% assign next_url = post.next.url %}
+{% include post.html %}
