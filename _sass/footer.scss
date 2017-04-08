@@ -1,0 +1,31 @@
+@import 'values';
+
+.rainshower-footer
+{
+	font-family: "Roboto Slab";
+	background: $MAIN_D;
+	color: $MAIN_M;
+	padding: 1.5em;
+	font-size: .8em;
+	
+	p
+	{
+		margin: 1em 0 0 0;
+		
+		&:first-of-type
+		{
+			margin: 0;
+		}
+	}
+	
+	a:link,
+	a:visited
+	{
+		color: $MAIN_V;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,23 @@
+@import 'values';
+
+.rainshower-header
+{
+	background-color: $MAIN_D;
+	color: $MAIN_M;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.rainshower-site-title
+{
+	margin: 0;
+	font-size: 1.25em;
+	padding: .5em;
+}
+
+.rainshower-site-nav-list
+{
+	@include light_bubble_links();
+}

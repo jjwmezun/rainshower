@@ -1,0 +1,47 @@
+@import 'values';
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+@import url('https://fonts.googleapis.com/css?family=Cantora+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300');
+@import url('https://fonts.googleapis.com/css?family=Martel:200,300');
+@import url('https://fonts.googleapis.com/css?family=Amiri:400,400i');
+
+html,
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: $MAIN_M;
+	background-image: linear-gradient( to bottom, $MAIN_M, $GRAY_M );
+	background-attachment: fixed;
+	color: $MAIN_D;
+	font-family: "Amiri";
+}
+
+body
+{
+	font-size: 115%;
+}
+
+h1
+{
+	font-family: "Cantora One";
+}
+
+ul
+{
+	font-family: "Roboto Slab";
+	text-transform: lowercase;
+	//font-variant: small-caps;
+}
+
+.rainshower-page-title
+{
+	text-align: center;
+}
+
+.rainshower-page-content
+{
+	padding: 0 1em;
+}

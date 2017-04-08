@@ -1,0 +1,63 @@
+@import 'values';
+
+.rainshower-sequence-links-list
+{
+	@include dark_bubble_links();
+	align-content: center;
+	justify-content: center;
+}
+
+a.rainshower-sequence-links-list-link
+{
+	padding: .5em 1em;
+}
+
+.rainshower-post-content
+{
+	margin: 0 auto;
+	max-width: 60em;
+	
+	p
+	{
+		margin: 0;
+		text-indent: 1em;
+		text-align: justify;
+		hyphens: auto;
+		line-height: 1.5em;
+		font-weight: 300;
+		
+		&:first-of-type
+		{
+			text-indent: 0;
+		}
+	}
+	
+	i
+	{
+		letter-spacing: .02em;
+		font-weight: 200;
+	}
+}
+
+@media screen and ( min-width: 800px )
+{
+	.rainshower-post-content
+	{
+		font-size: 125%;
+		padding: 1.5em;
+
+		p
+		{
+			text-indent: 2em;
+		}
+	}
+}
+
+@media screen and ( min-width: 1200px )
+{
+	.rainshower-post-content
+	{
+		font-size: 150%;
+		padding: 2em;
+	}
+}

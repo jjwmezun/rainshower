@@ -6,12 +6,15 @@
 	</head>
 	<body>
 	
-		<header>
-			<nav>
-				<ul>
+		<header class="rainshower-header">
+			<h1 class="rainshower-site-title">{{ site.title }}</h1>
+			<nav class="rainshower-site-nav">
+				<ul class="rainshower-site-nav-list">
 					{% for lpage in site.pages %}
 						{% if lpage.title %}
-							<li><a href="{{ lpage.url }}">{{ lpage.title }}</a></li>
+							<li class="rainshower-site-nav-list-item">
+								<a class="rainshower-site-nav-list-link" href="{{ lpage.url }}">{{ lpage.title }}</a>
+							</li>
 						{% endif %}
 					{% endfor %}
 				</ul>

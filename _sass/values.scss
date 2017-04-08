@@ -1,0 +1,50 @@
+$MAIN_M: #9ae;
+$MAIN_D: #012;
+$MAIN_V: #cdf;
+
+$GRAY_M: #bbb;
+
+@mixin dark_bubble_links()
+{
+	@include bubble_links( $MAIN_D, $MAIN_M );
+}
+
+@mixin light_bubble_links()
+{
+	@include bubble_links( $MAIN_M, $MAIN_D );
+}
+
+@mixin bubble_links( $bg, $fg )
+{
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	li
+	{
+		padding: .25em;
+	}
+
+	a
+	{
+		display: block;
+		padding: 1em;
+		border-radius: 2em;
+
+		&:link,
+		&:visited
+		{
+			background-color: $bg;
+			color: $fg;
+			text-decoration: none;
+			transition: background-color .5s;
+		}
+
+		&:hover
+		{
+			color: $MAIN_D;
+			background-color: $MAIN_V;
+		}
+	}
+}
